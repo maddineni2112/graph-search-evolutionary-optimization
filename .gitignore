@@ -8,6 +8,15 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
+# Local report source and build material
+local_report_source/
+presentation_build/
+report_build/
+*.aux
+*.log
+*.out
+*.toc
+
 # R
 .Rhistory
 .RData
