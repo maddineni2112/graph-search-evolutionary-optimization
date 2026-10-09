@@ -2,7 +2,6 @@
 
 This course project compares classical graph search with evolutionary path optimization on reproducibly generated obstacle grids. It evaluates BFS, DFS, Iterative Deepening, Uniform-Cost Search, Greedy Best-First Search, and A*, then tests whether seeding a Genetic Algorithm with an A* route improves convergence and reliability.
 
-The primary implementation is the executed notebook src/Graph_Search_Evolutionary_Optimization.ipynb. The original HW01 and HW02 notebooks are preserved under legacy/ as coursework provenance. They are documented honestly: HW01 is housing-price regression and HW02 is an MNIST MLP, not graph search.
 
 ## Problem statement
 
