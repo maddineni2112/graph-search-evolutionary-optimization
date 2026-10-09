@@ -29,6 +29,13 @@ Given a start node, goal node, obstacles, and optional terrain costs, find a fea
 
 The Genetic Algorithm represents a route as a fixed-length sequence of four-direction actions. The fitness function penalizes incomplete routes, invalid moves, revisits, and expensive paths. The hybrid variant inserts an A* route into the initial population and mutates additional variants around it.
 
+## Contributions
+
+- A single executed notebook implementing the graph generator, six classical searches, a Genetic Algorithm, and an A*-seeded hybrid.
+- A controlled comparison across unit-cost and weighted-terrain grids with fixed scenario and stochastic seeds.
+- Machine-readable result files, convergence histories, and reproducible SVG evidence figures.
+- Honest preservation of the original housing-regression and MNIST coursework as legacy context rather than relabeling them as graph-search work.
+
 ## Experimental setup
 
 The notebook generates 12 deterministic scenarios:
@@ -136,6 +143,13 @@ Run it from the repository root or from the src/ directory. The notebook regener
 ## Reproducibility and limitations
 
 The benchmark is synthetic and deterministic, with fixed scenario and GA seeds. Runtime values depend on the execution environment. The experiment uses small-to-medium grid sizes and a simple action-based chromosome, so the results do not establish universal algorithm rankings. The A*-seeded method has access to a classical solution by design, and its initialization cost is recorded separately.
+
+## Future work
+
+- Extend the benchmark to larger graphs and non-grid topology while preserving the same result schema.
+- Compare additional evolutionary operators, multi-objective fitness formulations, and population-size schedules.
+- Add confidence intervals and paired statistical tests across a larger independently generated scenario set.
+- Evaluate learned heuristics and hybrid initialization strategies under equalized end-to-end computational budgets.
 
 ## References
 
