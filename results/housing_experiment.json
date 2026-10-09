@@ -1,0 +1,78 @@
+{
+  "project": "Evolutionary Model Selection for Regression and Image Classification",
+  "seed": 42,
+  "housing": {
+    "task": "housing_regression",
+    "baseline_from_original_notebook": {
+      "query_prediction_dollars": 425005.21
+    },
+    "best_first": {
+      "method": "best_first",
+      "config": {
+        "learning_rate": 0.005,
+        "epochs": 500,
+        "l2": 0.01
+      },
+      "score": 0.008026449707246138,
+      "history": [
+        0.042530967514196424,
+        0.020530557676285414,
+        0.009526494081478898,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138
+      ],
+      "evaluations": 18
+    },
+    "genetic": {
+      "method": "genetic",
+      "config": {
+        "learning_rate": 0.005,
+        "epochs": 500,
+        "l2": 0.01
+      },
+      "score": 0.008026449707246138,
+      "history": [
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138,
+        0.008026449707246138
+      ],
+      "evaluations": 12
+    },
+    "selected": {
+      "config": {
+        "learning_rate": 0.005,
+        "epochs": 500,
+        "l2": 0.01
+      },
+      "test_mse_scaled": 0.008026449707246138,
+      "test_rmse_dollars": 8959.045544725252,
+      "theta": [
+        2.681676,
+        0.40878,
+        1.314901,
+        0.846219,
+        0.054496,
+        -0.152223,
+        -0.022091,
+        0.052423,
+        -0.11725
+      ],
+      "note": "Eight-row pedagogical benchmark; not a population-level housing evaluation."
+    }
+  }
+}

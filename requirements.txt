@@ -1,4 +1,7 @@
 Python>=3.10
-numpy
-networkx
-matplotlib
+numpy>=1.24
+matplotlib>=3.7
+networkx>=3.0
+scikit-learn>=1.3
+torch>=2.0
+torchvision>=0.15
